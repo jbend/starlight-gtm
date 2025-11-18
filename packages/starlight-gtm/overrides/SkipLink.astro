@@ -1,0 +1,19 @@
+---
+import Default from '@astrojs/starlight/components/SkipLink.astro';
+import { getGTMId } from '../gtm-config.js';
+
+const gtmId = getGTMId();
+---
+
+<Default><slot /></Default>
+
+{gtmId && (
+  <noscript>
+    <iframe
+      src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    />
+  </noscript>
+)}

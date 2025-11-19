@@ -11,7 +11,14 @@
     "url": "https://github.com/trimble-oss/starlight-gtm/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"pnpm --filter starlight-gtm-docs dev\" \"pnpm --filter starlight-gtm build --watch\"",
+    "build": "pnpm --filter starlight-gtm build && pnpm --filter starlight-gtm-docs build",
+    "preview": "pnpm --filter starlight-gtm-docs preview",
+    "test": "pnpm -r test",
+    "lint": "astro check --noSync && pnpm -r lint",
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
+    "changeset": "changeset",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.5",

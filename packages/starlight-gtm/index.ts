@@ -28,7 +28,7 @@ export default function starlightGTMPlugin(options: StarlightGTMPluginOptions): 
           })(window,document,'script','dataLayer','${id}');
         `
         
-        injectScript('head', gtmHeadScript)
+        // injectScript('head', gtmHeadScript)
 
         // Override SkipLink component to inject GTM noscript in body
         updateConfig({

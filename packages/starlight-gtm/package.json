@@ -18,6 +18,7 @@
   ],
   "exports": {
     ".": "./index.ts",
+    "./overrides/SkipLink.astro": "./overrides/SkipLink.astro",
     "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",

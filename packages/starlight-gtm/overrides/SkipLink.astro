@@ -1,8 +1,8 @@
 ---
 import Default from '@astrojs/starlight/components/SkipLink.astro';
-import { getGTMId } from '../gtm-config.js';
+import starlightGTMConfig from 'virtual:starlight-gtm-config'
 
-const gtmId = getGTMId();
+const gtmId = starlightGTMConfig.gtmId;
 ---
 
 <Default><slot /></Default>

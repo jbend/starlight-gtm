@@ -9,8 +9,6 @@
 
 ## Getting Started
 
-
-
 Want to get started immediately? Check out the [getting started guide](https://starlight-versions.vercel.app/getting-started/).
 
 > [!IMPORTANT]

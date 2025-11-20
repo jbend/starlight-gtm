@@ -8,7 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Starlight GTM',
-			plugins: [starlightGTMPlugin({ gtmId: 'GTM-P5MVN9QN' })],
+			plugins: [starlightGTMPlugin({ gtmId: 'GTM-XXXXXXX' })],
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{

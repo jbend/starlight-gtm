@@ -32,7 +32,7 @@ export default function starlightGTMPlugin(userConfig?: StarlightGTMConfig): Sta
 
         const gtmId = starlightGTMConfig.data?.gtmId;
 
-        logger.info(`starlight-gtm: config:setup: gtmId: ${gtmId}`);
+        logger.info(`starlight-gtm: reading GTM ID: ${gtmId}`);
 
         // GTM script for head
         const gtmHeadScript = `
@@ -43,13 +43,16 @@ export default function starlightGTMPlugin(userConfig?: StarlightGTMConfig): Sta
           })(window,document,'script','dataLayer','${gtmId}');
         `;
         
-        // injectScript('head', gtmHeadScript);
-
-        // Override SkipLink component to inject GTM noscript in body
         updateConfig({
           components: {
             SkipLink: skipLinkPath,
           },
+          head: [
+            {
+              tag: 'script',
+              content: gtmHeadScript,
+            },
+          ],
         }),
         addIntegration({
           name: 'starlight-gtm-integration',

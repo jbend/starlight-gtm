@@ -20,4 +20,4 @@ Want to get started immediately? Check out the [getting started guide](https://s
 
 Licensed under the MIT License, Copyright © HiDeoo.
 
-See [LICENSE](https://github.com/HiDeoo/starlight-versions/blob/main/LICENSE) for more information.
+See [LICENSE](https://github.com/jbend/starlight-versions/blob/main/LICENSE) for more information.

@@ -17,6 +17,7 @@
     "test": "pnpm -r test",
     "lint": "astro check --noSync && pnpm -r lint",
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
+    "format": "prettier -w --cache --ignore-unknown .",
     "changeset": "changeset",
     "release": "changeset publish"
   },
@@ -27,13 +28,15 @@
     "@types/node": "^24.10.1",
     "astro": "catalog:",
     "concurrently": "^9.2.1",
-    "eslint": "^9.39.1"
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1"
   },
   "keywords": [
     "astro",
     "starlight",
     "plugin"
-  ],  
+  ],
   "author": "jbendix",
   "license": "ISC",
   "packageManager": "pnpm@10.17.0"

@@ -2,9 +2,9 @@
 let gtmId: string | undefined;
 
 export function setGTMId(id: string): void {
-  gtmId = id;
+	gtmId = id;
 }
 
 export function getGTMId(): string | undefined {
-  return gtmId;
+	return gtmId;
 }

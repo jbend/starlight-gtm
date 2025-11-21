@@ -1,47 +1,47 @@
 {
-  "name": "starlight-gtm",
-  "version": "0.0.1",
-  "description": "Starlight plugin for Google Tag Manager",
-  "author": "jbendix",
-  "license": "MIT",
-  "type": "module",
-  "main": "index.ts",
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [
-    "starlight",
-    "gtm",
-    "plugin",
-    "documentation",
-    "astro"
-  ],
-  "exports": {
-    ".": "./index.ts",
-    "./overrides/SkipLink.astro": "./overrides/SkipLink.astro",
-    "./package.json": "./package.json"
-  },
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "styles"
-  ],
-  "scripts": {
-    "lint": "eslint . --cache --max-warnings=0",
-    "build": "tsdown",
-    "dev": "tsdown ./index.ts --watch",
-    "test": "echo \"No tests specified\" && exit 0"
-  },
-  "peerDependencies": {
-    "@astrojs/starlight": "catalog:"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.1",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.29.7",
-    "tsdown": "^0.15.12"
-  }
+	"name": "starlight-gtm",
+	"version": "0.0.1",
+	"description": "Starlight plugin for Google Tag Manager",
+	"author": "jbendix",
+	"license": "MIT",
+	"type": "module",
+	"main": "index.ts",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"starlight",
+		"gtm",
+		"plugin",
+		"documentation",
+		"astro"
+	],
+	"exports": {
+		".": "./index.ts",
+		"./overrides/SkipLink.astro": "./overrides/SkipLink.astro",
+		"./package.json": "./package.json"
+	},
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"styles"
+	],
+	"scripts": {
+		"lint": "eslint . --cache --max-warnings=0",
+		"build": "tsdown",
+		"dev": "tsdown ./index.ts --watch",
+		"test": "echo \"No tests specified\" && exit 0"
+	},
+	"peerDependencies": {
+		"@astrojs/starlight": "catalog:"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.1",
+		"@types/node": "^24.10.1",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@changesets/cli": "^2.29.7",
+		"tsdown": "^0.15.12"
+	}
 }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g transform="rotate(45 100 100)">
+    <!-- Tag body -->
+    <path d="M 30 50 L 150 50 L 150 130 L 30 130 Z" 
+          fill="#F7E7CE" 
+          stroke="#D4C4A8" 
+          stroke-width="3" 
+          rx="8"/>
+    
+    <!-- Tag hole/string attachment -->
+    <circle cx="30" cy="90" r="8" fill="#D4C4A8"/>
+    
+    <!-- String/ribbon -->
+    <path d="M 30 90 Q 20 80 20 70 Q 20 60 30 50" 
+          stroke="#D4C4A8" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+    
+    <!-- Decorative highlight -->
+    <path d="M 40 60 L 140 60 L 140 80 L 40 80 Z" 
+          fill="#FBF3E5" 
+          opacity="0.6"/>
+  </g>
+</svg>

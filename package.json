@@ -13,7 +13,6 @@
 	"scripts": {
 		"dev": "concurrently \"pnpm --filter starlight-gtm-docs dev\" \"pnpm --filter starlight-gtm build --watch\"",
 		"build": "pnpm --filter starlight-gtm build && pnpm --filter starlight-gtm-docs build",
-		"preview": "pnpm --filter starlight-gtm-docs preview",
 		"test": "pnpm -r test",
 		"lint": "astro check --noSync && pnpm -r lint",
 		"lint-format": "biome check --write",

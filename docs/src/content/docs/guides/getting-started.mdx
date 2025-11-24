@@ -1,0 +1,47 @@
+---
+title: Getting Started
+description: Getting started with Starlight GTM
+---
+
+This is the getting started guide for Starlight GTM.
+
+## What? Why?
+
+It may seem that adding Google Tag Manager to your Starlight site is trivial. 
+It is easy enough to add the snipets to the head and body of your site. 
+The first is easy with Starlight's convenient `head` override.
+However, there is no base layout access, so you need to override a component.
+
+Here we overide the `<SkipLink />` component to add the GTM script at the top of the page.
+
+
+## Prerequisites
+
+- A Google Tag Manager account
+- A Starlight site
+
+## Installation
+
+1. Install the Starlight GTM package
+```bash
+pnpm add starlight-gtm
+```
+
+  2. Add the GTM script to your site
+
+```typescript title="astro.config.mjs" ins={1,8}
+import starlightGTMPlugin from "starlight-gtm";
+
+export default defineConfig({
+	integrations: [
+		starlight({
+			title: "Starlight GTM",
+			plugins: [
+        starlightGTMPlugin({ gtmId: "GTM-XXXXXXX" })
+      ],
+			sidebar: [ ...	],
+		}),
+	],
+});
+```
+

@@ -1,0 +1,31 @@
+---
+title: Configuration
+description: Plugin configuration details.
+---
+
+There is only one configuration option, the Google Tag Manager ID. 
+The GTM ID comes in the form `GTM-XXXXXXX` (4-8 uppercase letters/numbers).
+
+We use this regex to validate the GTM ID:
+
+```regex title="GTM ID regex"
+/^GTM-[0-9A-Z]{4,8}$/
+```
+
+Example:
+
+```typescript title="astro.config.mjs" ins="GTM-XXXXXXX"
+import starlightGTMPlugin from "starlight-gtm";
+
+export default defineConfig({
+	integrations: [
+		starlight({
+			title: "Starlight GTM",
+			plugins: [
+        starlightGTMPlugin({ gtmId: "GTM-XXXXXXX" })
+      ],
+			sidebar: [ ...	],
+		}),
+	],
+});
+```

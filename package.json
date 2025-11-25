@@ -17,7 +17,6 @@
 		"check": "astro check --root docs",
 		"lint": "biome check --write",
 		"version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
-		"format": "prettier -w --cache --ignore-unknown .",
 		"changeset": "changeset",
 		"release": "changeset publish"
 	},

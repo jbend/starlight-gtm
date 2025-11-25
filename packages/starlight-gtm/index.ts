@@ -1,7 +1,7 @@
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { StarlightPlugin } from "@astrojs/starlight/types";
-import type { StarlightGTMConfig, StarlightGTMUserConfig } from "./libs/config";
+import type { StarlightGTMConfig } from "./libs/config";
 import { StarlightGTMConfigSchema } from "./libs/config";
 import { vitePluginStarlightGTM } from "./libs/vite";
 
@@ -9,7 +9,7 @@ import { vitePluginStarlightGTM } from "./libs/vite";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export type { StarlightGTMConfig, StarlightGTMUserConfig } from "./libs/config";
+export type { StarlightGTMConfig } from "./libs/config";
 
 export default function starlightGTMPlugin(
 	userConfig?: StarlightGTMConfig,
@@ -22,12 +22,7 @@ export default function starlightGTMPlugin(
 	return {
 		name: "starlight-gtm",
 		hooks: {
-			"config:setup": async ({
-				config: starlightConfig,
-				updateConfig,
-				logger,
-				addIntegration,
-			}: any) => {
+			"config:setup": async ({ updateConfig, logger, addIntegration }) => {
 				const parsedSuccess = starlightGTMConfig.success;
 				if (!parsedSuccess) {
 					logger.error(`starlight-gtm: ${starlightGTMConfig.error.message}`);
@@ -57,19 +52,20 @@ export default function starlightGTMPlugin(
 							content: gtmHeadScript,
 						},
 					],
-				}),
-					addIntegration({
-						name: "starlight-gtm-integration",
-						hooks: {
-							"astro:config:setup": ({ updateConfig }) => {
-								updateConfig({
-									vite: {
-										plugins: [vitePluginStarlightGTM(starlightGTMConfig.data)],
-									},
-								});
-							},
+				});
+
+				addIntegration({
+					name: "starlight-gtm-integration",
+					hooks: {
+						"astro:config:setup": ({ updateConfig }) => {
+							updateConfig({
+								vite: {
+									plugins: [vitePluginStarlightGTM(starlightGTMConfig.data)],
+								},
+							});
 						},
-					});
+					},
+				});
 			},
 		},
 	};

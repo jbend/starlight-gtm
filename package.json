@@ -2,13 +2,13 @@
 	"name": "starlight-gtm-workspace",
 	"version": "0.0.1",
 	"description": "Starlight Google Tag Manager plugin for Astro",
-	"homepage": "https://github.com/trimble-oss/starlight-gtm",
+	"homepage": "https://github.com/jbend/starlight-gtm",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/trimble-oss/starlight-gtn.git"
+		"url": "https://github.com/jbend/starlight-gtn.git"
 	},
 	"bugs": {
-		"url": "https://github.com/trimble-oss/starlight-gtm/issues"
+		"url": "https://github.com/jbend/starlight-gtm/issues"
 	},
 	"scripts": {
 		"dev": "concurrently \"pnpm --filter starlight-gtm-docs dev\" \"pnpm --filter starlight-gtm build --watch\"",

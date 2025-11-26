@@ -1,5 +1,5 @@
 {
-	"name": "starlight-gtm",
+	"name": "@jbend/starlight-gtm",
 	"version": "0.0.1",
 	"description": "Starlight plugin for Google Tag Manager",
 	"author": "jbendix",

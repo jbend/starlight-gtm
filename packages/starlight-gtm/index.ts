@@ -25,13 +25,13 @@ export default function starlightGTMPlugin(
 			"config:setup": async ({ updateConfig, logger, addIntegration }) => {
 				const parsedSuccess = starlightGTMConfig.success;
 				if (!parsedSuccess) {
-					logger.error(`starlight-gtm: ${starlightGTMConfig.error.message}`);
+					logger.error(`${starlightGTMConfig.error.message}`);
 					return;
 				}
 
 				const gtmId = starlightGTMConfig.data?.gtmId;
 
-				logger.info(`starlight-gtm: reading GTM ID: ${gtmId}`);
+				logger.info(`Reading GTM ID: ${gtmId}`);
 
 				// GTM script for head
 				const gtmHeadScript = `

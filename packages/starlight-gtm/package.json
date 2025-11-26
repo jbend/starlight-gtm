@@ -5,7 +5,9 @@
 	"author": "jbendix",
 	"license": "MIT",
 	"type": "module",
-	"main": "index.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -21,14 +23,13 @@
 		"./overrides/SkipLink.astro": "./overrides/SkipLink.astro",
 		"./package.json": "./package.json"
 	},
-	"types": "./dist/index.d.ts",
 	"files": [
 		"dist",
 		"styles"
 	],
 	"scripts": {
 		"lint": "eslint . --cache --max-warnings=0",
-		"build": "tsdown",
+		"build": "tsdown --format esm --format cjs",
 		"dev": "tsdown ./index.ts --watch",
 		"test": "echo \"No tests specified\" && exit 0"
 	},

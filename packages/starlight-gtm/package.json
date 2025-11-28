@@ -1,6 +1,6 @@
 {
 	"name": "starlight-gtm",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Starlight plugin for Google Tag Manager",
 	"author": "jbendix",
 	"license": "MIT",

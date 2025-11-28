@@ -1,5 +1,5 @@
 ---
-"@jbend/starlight-gtm": patch
+"starlight-gtm": patch
 ---
 
 Updating configuratin and cleaning up logging

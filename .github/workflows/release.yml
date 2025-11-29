@@ -44,3 +44,5 @@ jobs:
           publish: pnpm changeset publish
           commit: "ci: release"
           title: "ci: release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

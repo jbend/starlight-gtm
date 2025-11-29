@@ -11,7 +11,7 @@
 		"url": "https://github.com/jbend/starlight-gtm/issues"
 	},
 	"scripts": {
-		"dev": "concurrently \"pnpm --filter starlight-gtm-docs dev\" \"pnpm --filter starlight-gtm build --watch\"",
+		"dev": "pnpm --filter starlight-gtm-docs dev",
 		"build": "pnpm --filter starlight-gtm build",
 		"build:all": "pnpm --filter starlight-gtm build && pnpm --filter starlight-gtm-docs build",
 		"test": "pnpm -r test",

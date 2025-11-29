@@ -60,7 +60,7 @@ importers:
   packages/starlight-gtm:
     dependencies:
       '@astrojs/starlight':
-        specifier: 'catalog:'
+        specifier: '>=0.36.0'
         version: 0.36.2(astro@5.15.9(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1))
     devDependencies:
       '@eslint/js':

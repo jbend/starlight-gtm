@@ -1,5 +1,11 @@
 # starlight-gtm
 
+## 0.0.7
+
+### Patch Changes
+
+- [#5](https://github.com/jbend/starlight-gtm/pull/5) [`169833e`](https://github.com/jbend/starlight-gtm/commit/169833e66f2fdfcfdc6e09b12fb10c9ec1ad03c6) Thanks [@jbend](https://github.com/jbend)! - Updating package README.md with installation and deployment details
+
 ## 0.0.6
 
 ### Patch Changes

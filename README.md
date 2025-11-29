@@ -1,1 +1,1 @@
-packages/starlight-gtm/README.md
+./packages/starlight-gtm/README.md

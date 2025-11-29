@@ -1,4 +1,4 @@
-# Starlight Theme/Plugin Template
+# Starlight Plugin 
 
 ## Getting Started
 

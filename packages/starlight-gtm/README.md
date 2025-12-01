@@ -1,5 +1,7 @@
 # Starlight GTM
 
+This project is under active development, ckeck back soon!
+
 Starlight plugin to add Google Tag Manager scripts to a Starlight project.
 
 ## Getting Started

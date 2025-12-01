@@ -12,8 +12,7 @@
 	},
 	"scripts": {
 		"dev": "pnpm --filter starlight-gtm-docs dev",
-		"build": "pnpm --filter starlight-gtm build",
-		"build:all": "pnpm --filter starlight-gtm build && pnpm --filter starlight-gtm-docs build",
+		"build": "pnpm --filter starlight-gtm-docs build",
 		"test": "pnpm -r test",
 		"check": "astro check --root docs",
 		"lint": "biome check --write",
@@ -27,8 +26,7 @@
 		"@changesets/changelog-github": "^0.5.1",
 		"@changesets/cli": "^2.29.7",
 		"@types/node": "^24.10.1",
-		"astro": "catalog:",
-		"concurrently": "^9.2.1"
+		"astro": "catalog:"
 	},
 	"keywords": [
 		"astro",

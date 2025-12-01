@@ -20,14 +20,6 @@
 		"./overrides/SkipLink.astro": "./overrides/SkipLink.astro",
 		"./package.json": "./package.json"
 	},
-	"files": [
-		"dist",
-		"styles"
-	],
-	"scripts": {
-		"build": "tsdown",
-		"dev": "tsdown ./index.ts --watch"
-	},
 	"peerDependencies": {
 		"@astrojs/starlight": ">=0.36.0"
 	},
@@ -36,5 +28,12 @@
 		"@types/node": "^24.10.1",
 		"tsdown": "^0.16.7",
 		"typescript": "^5.9.3"
-	}
+	},
+	"homepage": "https://github.com/jbend/starlight-gtm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbend/starlight-gtm",
+    "directory": "packages/starlight-gtm"
+  },
+  "bugs": "https://github.com/jbend/starlight-gtm/issues"
 }

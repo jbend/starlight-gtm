@@ -1,5 +1,11 @@
 # starlight-gtm
 
+## 0.0.8
+
+### Patch Changes
+
+- Fix components declaration
+
 ## 0.0.7
 
 ### Patch Changes

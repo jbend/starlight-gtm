@@ -1,6 +1,6 @@
 {
 	"name": "starlight-gtm",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Starlight plugin for Google Tag Manager",
 	"author": "jbendix",
 	"license": "MIT",
@@ -30,10 +30,10 @@
 		"typescript": "^5.9.3"
 	},
 	"homepage": "https://github.com/jbend/starlight-gtm",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jbend/starlight-gtm",
-    "directory": "packages/starlight-gtm"
-  },
-  "bugs": "https://github.com/jbend/starlight-gtm/issues"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jbend/starlight-gtm",
+		"directory": "packages/starlight-gtm"
+	},
+	"bugs": "https://github.com/jbend/starlight-gtm/issues"
 }

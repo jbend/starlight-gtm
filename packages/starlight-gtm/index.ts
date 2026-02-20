@@ -53,6 +53,7 @@ export default function starlightGTMPlugin(
             SkipLink: skipLinkPath,
           },
           head: [
+            ...(config.head ?? []),
             {
               tag: "script",
               content: gtmHeadScript,

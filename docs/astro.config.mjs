@@ -10,6 +10,13 @@ export default defineConfig({
 		starlight({
 			title: "Starlight GTM",
 			plugins: [starlightGTMPlugin({ gtmId: "GTM-XXXXXXX" })],
+			// Test that the GTM plugin preserves existing head entries (see built HTML <head>)
+			head: [
+				{
+					tag: "meta",
+					attrs: { name: "starlight-gtm-test", content: "project-head-preserved" },
+				},
+			],
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{

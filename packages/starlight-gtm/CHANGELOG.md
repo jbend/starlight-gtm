@@ -1,5 +1,11 @@
 # starlight-gtm
 
+## 0.0.9
+
+### Patch Changes
+
+- [#9](https://github.com/jbend/starlight-gtm/pull/9) [`4179efd`](https://github.com/jbend/starlight-gtm/commit/4179efd1a025ed7e8390282e4b508506755a3bf9) Thanks [@jbendtr](https://github.com/jbendtr)! - Fix head declaration
+
 ## 0.0.8
 
 ### Patch Changes
